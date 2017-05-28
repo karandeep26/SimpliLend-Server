@@ -75,8 +75,7 @@ public class MainController {
 
     @GetMapping(value = "/getApplications")
     public @ResponseBody
-    ArrayList<LoanApplication> getApplications(@RequestHeader(value = "id")int id) throws UnknownHostException {
-        InetAddress.getLocalHost().getHostAddress();
+    ArrayList<LoanApplication> getApplications(@RequestHeader(value = "id")int id)  {
 
         return loanRepository.findAllByUserId(id);
     }
