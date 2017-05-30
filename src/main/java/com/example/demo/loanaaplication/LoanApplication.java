@@ -17,7 +17,6 @@ public class LoanApplication {
     private Integer loanAmount;
     private String purpose;
     private Integer duration;
-    private Integer addressId;
     private String street;
     private String city;
     private String state;
@@ -95,11 +94,5 @@ public class LoanApplication {
         this.duration = duration;
     }
 
-    public Integer getAddressId() {
-        return addressId;
-    }
 
-    public void setAddressId(Integer addressId) {
-        this.addressId = addressId;
-    }
 }
